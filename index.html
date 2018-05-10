@@ -2,14 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Submit No.1 - Ironhacks</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
+    <div class="subBody">
+        <header>
+            <h1><span>New York City Habitable Districts</span></h1>
+        </header>
+        <nav>
+            <button>Option 1</button>
+            <button>Option 2</button>
+            <button>Option 3</button>
+            <button>Option 4</button>
+        </nav>
+        <main>
+            <div id="map">
+                
+            </div>
+            
+        </main>
+        <footer>
+            <p>2018 Copyright©</p>
+            <p>Designed by: Obed Felipe Espinosa</p>
+        </footer>
     </div>
-    <script src="index.js"></script>
+    <script>
+      function initMap() {
+        var uluru = {lat: 40.729100, lng: -73.996500};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaLgLNTp8jZwDBcjtnxU0e4IuqUgz2xlM&callback=initMap">
+    </script>
 </body>
 </html>
