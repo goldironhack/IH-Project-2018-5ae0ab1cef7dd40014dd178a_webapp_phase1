@@ -24,7 +24,8 @@ header{
     position:relative;
     background-size:cover;
     background-position:center;
-    background-image: url('https://professor-falken.com/wp-content/uploads/2017/10/ciudad-urbe-rascacielos-aglomeracion-edificios-nueva-york-Fondos-de-Pantalla-HD-professor-falken.com_.jpg');
+    /*background-image: url('https://professor-falken.com/wp-content/uploads/2017/10/ciudad-urbe-rascacielos-aglomeracion-edificios-nueva-york-Fondos-de-Pantalla-HD-professor-falken.com_.jpg');*/
+    background-color:#FF6F40;
     height:140px;
     width:100%;
     border-bottom:2px solid #CC2714;
